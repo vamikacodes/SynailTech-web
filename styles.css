@@ -273,6 +273,15 @@ section {
 }
 
 /* Services Section */
+
+.service-label {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Take full space */
+    gap: 15px;
+    cursor: pointer;
+}
+
 .services-section {
     background-color: var(--background-color);
 }
@@ -302,6 +311,7 @@ section {
     align-items: center;
     padding: 15px 0;
     border-bottom: 1px solid #eef6fb;
+    flex-wrap: wrap;
 }
 
 .service-item:last-child {
