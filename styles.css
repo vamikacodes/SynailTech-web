@@ -589,12 +589,6 @@ section {
 }
 
 
-.footer-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .footer-logo {
     display: flex;
     align-items: center;
@@ -608,3 +602,8 @@ section {
     box-shadow: var(--box-shadow);
 }
 
+.footer-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
