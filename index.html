@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synail Tech | Where Art Meets Nails</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-circle">
+                    <!-- Logo placeholder - replace with actual image -->
+                    <img src="/PICS/logo.jpg" alt="Synail Tech Logo">
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li class="more-menu">
+                        <a href="#">More</a>
+                        <ul class="submenu">
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#reviews">Reviews</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu" id="mobileMenu">☰</div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Where Art Meets Nails</h1>
+            <p>Where artistic vision meets technical precision, transforming your hands into personalized masterpieces</p>
+            <a href="#services" class="btn">Book Appointment</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Products</h2>
+                <p>Premium press-on nails with unique designs</p>
+            </div>
+            <div class="product-categories">
+                <button class="category-btn active" data-category="best-sellers">Best Sellers</button>
+                <button class="category-btn" data-category="other-designs">Other Designs</button>
+            </div>
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Professional nail care and extensions</p>
+            </div>
+            <div class="booking-container">
+                <div class="services-list">
+                    <h3>Available Services</h3>
+                    <!-- Services will be loaded here via JavaScript -->
+                    <div id="servicesList"></div>
+                </div>
+                <div class="booking-form">
+                    <h3>Book Your Appointment</h3>
+                    <form id="bookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time Slot</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select a time</option>
+                                <option value="3:00 PM">3:00 PM</option>
+                                <option value="6:00 PM">6:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Special Requests</label>
+                            <textarea id="notes" name="notes"></textarea>
+                        </div>
+                        <div class="booking-summary" id="bookingSummary">
+                            <h4>Booking Summary</h4>
+                            <div class="summary-item">
+                                <span>Selected Services:</span>
+                                <span id="selectedServices">None</span>
+                            </div>
+                            <div class="summary-total">
+                                <span>Total:</span>
+                                <span id="totalPrice">₹0</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Confirm Booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+                <p>The story behind Synail Tech</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/PICS/about.PNG" alt="Synail Tech Studio">
+                </div>
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>At Synail Tech, we believe nails are more than just beauty — they're a form of personal expression. From the beginning, our focus has been on creating intricate, custom designs that reflect each client's unique style. Whether we're building a set inspired by your mood board or bringing a specific theme to life, we're here to make sure your nails are not only pretty, but also practical and wearable in your everyday life.</p>
+                    <p>Every set we craft is designed to help you feel confident, stylish, and seen; because at Synail Tech, your nails aren't just an accessory; they're a statement of who you are.</p>
+                    <h3>Founder's Story</h3>
+                    <p>Hi, I'm Syna! Ever since fifth grade, I've loved doing my own nails with regular nail polish at home. I grew up watching countless YouTube tutorials and experimenting with different designs I was always the "art girl" in school! Eventually, I reached a point where I wanted to turn this passion into something bigger, something that truly resonated with me and that's how Synail Tech was born.</p>
+                    <p>I'm a fully self-taught nail tech, and this business isn't just <em>another</em> venture for me. Even if Synail Tech didn't exist, I'd still be doing nails because it's a part of who I am. But this platform has given me a way to share the joy, creativity, and imagination I've nurtured over the years. Every time I create a new set, I share a piece of myself and my story with each client. When someone walks through my door, it's not just about beautiful nails — it's about creating a genuine connection and offering a space where clients feel they belong.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our services</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">How long do press-on nails last?</div>
+                    <div class="faq-answer">
+                        <p>With proper application and care, our press-on nails can last 1-2 weeks. For maximum longevity, make sure your natural nails are clean and oil-free before application, and wear gloves when doing household chores.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How do I prepare for my nail appointment?</div>
+                    <div class="faq-answer">
+                        <p>Please arrive with clean nails free of any polish. If you're getting extensions, it's best to have your natural nails at a manageable length. Also, bring some design inspiration if you have specific ideas in mind!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What's your cancellation policy?</div>
+                    <div class="faq-answer">
+                        <p>Appointments can be cancelled or rescheduled at least 24 hours in advance without any penalty. For cancellations within 24 hours, a 50% fee may apply.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Do you offer custom nail designs?</div>
+                    <div class="faq-answer">
+                        <p>Absolutely! For custom press-on nails, you can select the "Custom Nail Set" option and upload a reference image or describe your desired design. For in-person services, just let us know your design ideas during your appointment.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How do I find my correct nail size?</div>
+                    <div class="faq-answer">
+                        <p>We offer press-on nails in small, medium, and large sizes. If you're unsure of your size, measure the width of your natural nails at their widest point. Small fits nails up to 7mm wide, medium fits 7-10mm, and large fits 10-13mm.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Customer Reviews</h2>
+                <p>What our clients say about us</p>
+            </div>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"I've been using Synail Tech's press-on nails for months now and I'm absolutely in love! The designs are stunning and they last much longer than other brands I've tried."</p>
+                    <p class="review-author">- Priya M.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Syna is a true artist! The gel extensions she did for me received so many compliments. The attention to detail is incredible."</p>
+                    <p class="review-author">- Anjali K.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"The customer service is exceptional. I had a special request for my wedding nails and Synail Tech delivered beyond my expectations!"</p>
+                    <p class="review-author">- Neha S.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with any questions</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Our Information</h3>
+                    <div class="contact-details">
+                        <p><span class="contact-icon">📍</span> Location: Omaxe Royal Residency, Pakhowal Road</p>
+                        <p><span class="contact-icon">📞</span> Phone: Coming Soon</p>
+                        <p><span class="contact-icon">✉️</span> Email: synailtech@gmail.com</p>
+                        <p><span class="contact-icon">⏰</span> Hours: 11 AM - 8 PM</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/synail_tech?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon">IG</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">Name</label>
+                            <input type="text" id="contactName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email</label>
+                            <input type="email" id="contactEmail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" id="contactSubject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="/PICS/logo.jpg" alt="Synail Tech Logo">
+                    </div>
+                    <p>Where Art Meets Nails</p>
+                    <p>Professional nail designs, press-ons, and expert care for your unique style.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Saturday</p>
+                    <p>11:00 AM - 8:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/synail_tech?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon">IG</a>
+                
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Synail Tech. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Confirmation Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h3 class="modal-title">Booking Confirmed!</h3>
+            <p>Thank you for booking with Synail Tech. A confirmation email will be sent to your email address with all the details.</p>
+            <p>If you have any questions, feel free to contact us at synailtech@gmail.com</p>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
