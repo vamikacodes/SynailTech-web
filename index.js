@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 2,
                 name: 'Classic Gold',
                 price: 650,
-                image: 'classic-golg.jpg',
+                image: 'classic-gold.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
@@ -46,21 +46,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 5,
                 name: 'Chrome French',
                 price: 699,
-                image: 'chromefrench.jpg',
+                image: 'chrome french.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
                 id: 6,
                 name: 'Mermaid Chrome',
                 price: 650,
-                image: 'mermaidchrome.jpg',
+                image: 'mermaid chrome.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
                 id: 7,
                 name: 'Cartoon Cat',
                 price: 699,
-                image: 'cartooncats.jpg',
+                image: 'cartoon-cats.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
