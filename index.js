@@ -23,14 +23,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 2,
                 name: 'Classic Gold',
                 price: 650,
-                image: 'about.PNG',
+                image: 'classic-golg.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
                 id: 3,
                 name: 'Spring Butterflies',
                 price: 499,
-                image: 'spring-butterflies.jpg',
+                image: 'spring-by.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
@@ -46,42 +46,42 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 5,
                 name: 'Chrome French',
                 price: 699,
-                image: 'chrome-french.jpg',
+                image: 'chrome french.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
                 id: 6,
                 name: 'Mermaid Chrome',
                 price: 650,
-                image: 'mermaid-chrome.jpg',
+                image: 'mermaid chrome.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
                 id: 7,
                 name: 'Cartoon Cat',
                 price: 699,
-                image: 'cartoon-cat.jpg',
+                image: 'cartoon cats'.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
                 id: 8,
                 name: 'Red Catalye',
                 price: 599,
-                image: 'red-catalye.jpg',
+                image: 'red catalye.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
                 id: 9,
                 name: 'Intricate Art Set',
                 price: 899,
-                image: 'intricate-art.jpg',
+                image: 'art-set.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
                 id: 10,
                 name: 'Tropical Vibe',
                 price: 799,
-                image: 'tropical-vibe.jpg',
+                image: 'tropical.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
@@ -95,49 +95,49 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 12,
                 name: 'Royal Gold',
                 price: 699,
-                image: 'royal-gold.jpg',
+                image: 'rgold.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
                 id: 13,
                 name: 'Spring Flowers',
                 price: 599,
-                image: 'spring-flowers.jpg',
+                image: 'sp-flowers.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
                 id: 14,
                 name: 'Cat Eye with Chrome',
                 price: 699,
-                image: 'cat-eye-chrome.jpg',
+                image: 'cateye-chrome.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
                 id: 15,
                 name: 'Stained Glass',
                 price: 750,
-                image: 'stained-glass.jpg',
+                image: 'stain-glas.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
                 id: 16,
                 name: 'Basic Gold Chrome Flowers',
                 price: 699,
-                image: 'gold-chrome-flowers.jpg',
+                image: 'basic-gold-ch-flow.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
                 id: 17,
                 name: 'Only Browns with Chrome',
                 price: 799,
-                image: 'browns-chrome.jpg',
+                image: 'browns-ch.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
                 id: 18,
                 name: 'Blossom Cherry',
                 price: 699,
-                image: 'blossom-cherry.jpg',
+                image: 'cherry.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
