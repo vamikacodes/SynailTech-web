@@ -137,14 +137,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 18,
                 name: 'Blossom Cherry',
                 price: 699,
-                image: 'cherry.jpg',
+                image: 'cherryoverload.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
                 id: 19,
                 name: 'Cat Eye Butterfly',
                 price: 599,
-                image: 'cat-eye-butterfly.jpg',
+                image: 'cateye-by.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
