@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 7,
                 name: 'Cartoon Cat',
                 price: 699,
-                image: 'cartooncats'.jpg',
+                image: 'cartooncats.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
