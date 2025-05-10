@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 2,
                 name: 'Classic Gold',
                 price: 650,
-                image: 'classic-gold.jpg',
+                image: 'about.PNG',
                 sizes: ['S', 'M', 'L']
             },
             {
