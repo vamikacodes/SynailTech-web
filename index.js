@@ -182,54 +182,64 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     // Load Products
+    function renderProducts(category) {
     const productGrid = document.getElementById('productGrid');
-    const categoryButtons = document.querySelectorAll('.category-btn');
+    productGrid.innerHTML = ''; // Clear existing products
     
-    function loadProducts(category) {
-        if (!productGrid) return;
+    const productsToRender = products[category] || [];
+    
+    productsToRender.forEach(product => {
+        const productCard = document.createElement('div');
+        productCard.className = 'product-card';
         
-        productGrid.innerHTML = '';
+        // Note the updated HTML structure to match your CSS
+        productCard.innerHTML = `
+            <div class="product-image-container">
+                <img src="${product.image}" alt="${product.name}" class="product-image">
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">${product.name}</h3>
+                <p class="product-price">₹${product.price}</p>
+                <div class="product-sizes">
+                    <span>Size:</span>
+                    ${product.sizes.map(size => 
+                        `<label class="size-option">
+                            <input type="radio" name="size-${product.id}" value="${size}">
+                            <span>${size}</span>
+                        </label>`
+                    ).join('')}
+                </div>
+                <button class="add-to-cart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}">
+                    Add to Cart
+                </button>
+            </div>
+        `;
         
-        products[category].forEach(product => {
-            const productCard = document.createElement('div');
-            productCard.className = 'product-card';
-            
-            let customHtml = '';
-            if (product.custom) {
-                customHtml = `
-                    <div class="custom-upload">
-                        <label for="customDesign">Upload Reference Design:</label>
-                        <input type="file" id="customDesign" name="customDesign" accept="image/*">
-                        <textarea placeholder="Design specifications..."></textarea>
-                    </div>
-                `;
-            }
-            
-            productCard.innerHTML = `
-                <div class="product-image">
-                    <img src="${product.image}" alt="${product.name}">
-                </div>
-                <div class="product-details">
-                    <h3>${product.name}</h3>
-                    <p class="product-price">₹${product.price}</p>
-                    <div class="product-sizes">
-                        <span>Size:</span>
-                        ${product.sizes.map(size => 
-                            `<label class="size-option">
-                                <input type="radio" name="size-${product.id}" value="${size}">
-                                <span>${size}</span>
-                            </label>`
-                        ).join('')}
-                    </div>
-                    ${customHtml}
-                    <button class="add-to-cart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}">
-                        Add to Cart
-                    </button>
-                </div>
-            `;
-            
-            productGrid.appendChild(productCard);
+        productGrid.appendChild(productCard);
+    });
+}
+
+// Event listeners for category buttons
+document.querySelectorAll('.category-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        // Remove active class from all buttons
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.classList.remove('active');
         });
+        
+        // Add active class to clicked button
+        this.classList.add('active');
+        
+        // Render products for the selected category
+        const category = this.dataset.category;
+        renderProducts(category);
+    });
+});
+
+// Initialize with best sellers
+document.addEventListener('DOMContentLoaded', function() {
+    renderProducts('best-sellers');
+});
         
         // Add event listeners to "Add to Cart" buttons
         const addToCartButtons = document.querySelectorAll('.add-to-cart');
