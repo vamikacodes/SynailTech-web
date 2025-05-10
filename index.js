@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 8,
                 name: 'Red Catalye',
                 price: 599,
-                image: 'red catalye.jpg',
+                image: 'red cateye.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
