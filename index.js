@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 1,
                 name: 'Rustic Red with Silver',
                 price: 650,
-                image: 'rustic-red.jpg',
+                image: 'rustic red-silver.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
