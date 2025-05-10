@@ -46,21 +46,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 5,
                 name: 'Chrome French',
                 price: 699,
-                image: 'chrome french.jpg',
+                image: 'chromefrench.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
                 id: 6,
                 name: 'Mermaid Chrome',
                 price: 650,
-                image: 'mermaid chrome.jpg',
+                image: 'mermaidchrome.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
                 id: 7,
                 name: 'Cartoon Cat',
                 price: 699,
-                image: 'cartoon cats'.jpg',
+                image: 'cartooncats'.jpg',
                 sizes: ['S', 'M', 'L']
             },
             {
